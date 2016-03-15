@@ -1,0 +1,14 @@
+DEPENDENCIES
+  java
+    git: git@github.com:opscode-cookbooks/java.git
+    revision: 0b40a7a3d3cdbe0312d8e339075059e87588a598
+  weblogic
+    path: .
+    metadata: true
+
+GRAPH
+  apt (3.0.0)
+  java (1.39.0)
+    apt (>= 0.0.0)
+  weblogic (0.1.6)
+    java (>= 0.0.0)
