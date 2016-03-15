@@ -1,0 +1,17 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+platforms:
+- name: weblogic
+  driver:
+    image: chef_centos7:latest
+    platform: rhel
+suites:
+  - name: default
+    run_list:
+      - recipe[weblogic::default]
+    attributes:
